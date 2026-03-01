@@ -16,7 +16,7 @@ app = FastAPI()
 
 origins = [
     #"http://localhost.tiangolo.com",
-    "https://ep-soft-poetry-aiwbf4xr-pooler.c-4.us-east-1.aws.neon.tech",
+    "https://",
     "http://localhost"
     #"http://localhost:8080",
 ]
@@ -43,4 +43,5 @@ app.include_router(job_interview_routes)
 
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(app, host="0.0.0.0", port=8000)
